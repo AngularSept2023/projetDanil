@@ -1,0 +1,39 @@
+<h1 class="titre1">La tragédie d'avant guerre : <span id="titre1">Le Titanic</span></h1>
+
+
+<body>
+    
+    <h4 class="titre4">Quelques passagers du titanic :</h4>
+
+    <button (click)="showMorePassengers()">Cliquez pour afficher plus de passagers</button>
+
+    <ul>
+        <li *ngFor="let passenger of displayedPassengers">
+          {{ passenger.Name }} - <br> 
+          <button (click)="showDetails(passenger)">Voir détails</button>
+        </li>
+        <div *ngIf="selectedPassenger">
+          <h4>Détail du passager</h4>
+          <p>Nom : {{ selectedPassenger.Name }}</p>
+          <p>Age:  {{ selectedPassenger.Age }}</p>
+          <p>Survécu : {{ selectedPassenger.Survived }}</p> 
+          <p>Sexe : {{ selectedPassenger.Sex}}</p>
+          <p>Prix du billet : {{ selectedPassenger.Fare}}</p>
+        </div>
+    </ul>
+
+    
+    <div id="bateau">
+        <img src="https://www.pngplay.com/wp-content/uploads/12/Titanic-PNG-HD-Quality.png" alt="">
+    </div>
+
+    <q style="color: grey;">Au niveau du détail des passagers le 0 nous indique que le passager est décédé lors de l'accident.</q>
+</body>
+
+  <footer>
+    <div class="footer">
+        <h3>Merci de votre visite !</h3>
+        <p>Total de passagers: {{ passengers.length }}</p>
+        <p>Passagers affichés: {{ displayedPassengers.length }}</p>
+    </div>
+  </footer>

@@ -1,0 +1,44 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.titre1 {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: 1em;
+    /* padding-top: 0; */
+    background: pink;
+}
+
+#titre1 {
+    color: brown;
+}
+
+button {
+ margin-left: 1em;
+}
+
+#bateau {
+    text-align: center;
+}
+
+img {
+    height: 400px;
+}
+
+.titre4 {
+    margin-left: 1em;
+}
+
+.footer {
+    border: 2px dashed grey;
+    background: pink;
+    text-align: center;
+    position: static;
+}
